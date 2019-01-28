@@ -4,10 +4,9 @@
     "tree": {
         "Aktiva": {
             "report_type": "Balance Sheet",
-            "is_group": 1,
+            "root_type": "Asset",
             "Anlageverm\u00f6gen": {
                 "account_number": "0",
-                "is_group": 1,
                 "Sonstige Aktiva / Passiva (Gr 2)": {
                     "account_number": "40",
                     "account_type": "Fixed Asset",
@@ -516,7 +515,6 @@
             },
             "Umlaufverm\u00f6gen": {
                 "account_number": "1",
-                "is_group": 1,
                 "Roh-, Hilfs- und Betriebsstoffe (Bestand)": {
                     "account_number": "1002",
                     "account_type": "Stock",
@@ -1456,10 +1454,9 @@
         },
         "Passiva": {
             "report_type": "Balance Sheet",
-            "is_group": 1,
+            "root_type": "Liability",
             "Eigenkapital/Fremdkapital": {
                 "account_number": "2",
-                "is_group": 1,
                 "Gezeichnetes Kapital": {
                     "account_number": "2900",
                     "account_type": "",
@@ -1608,7 +1605,6 @@
             },
             "Fremdkapital": {
                 "account_number": "3",
-                "is_group": 1,
                 "R\u00fcckstellungen f\u00fcr Pensionen und \u00e4hnliche Verpflichtungen": {
                     "account_number": "3001",
                     "account_type": "",
@@ -2607,9 +2603,9 @@
             }
         },
         "Betriebliche Ertr\u00e4ge": {
+            "root_type": "Income",
             "report_type": "Profit and Loss",
             "account_number": "4",
-            "is_group": 1,
             "Umsatzerl\u00f6se (Zur freien Verf\u00fcgung)": {
                 "account_number": "4026",
                 "freeze_account": "No"
@@ -3436,9 +3432,9 @@
             }
         },
         "Betriebliche Aufwendungen (1)": {
+            "root_type": "Expenses",
             "report_type": "Profit and Loss",
             "account_number": "5",
-            "is_group": 1,
             "Aufwendungen f\u00fcr Roh-, Hilfs- und Betriebsstoffe und f\u00fcr bezogene Waren": {
                 "account_number": "5000",
                 "account_type": "",
@@ -4291,9 +4287,9 @@
             }
         },
         "Betriebliche Aufwendungen (2)": {
+            "root_type": "Expenses",
             "report_type": "Profit and Loss",
             "account_number": "6",
-            "is_group": 1,
             "L\u00f6hne und Geh\u00e4lter": {
                 "account_number": "6001",
                 "account_type": "",
@@ -5483,7 +5479,6 @@
         "Weitere Ertr\u00e4ge und Aufwendungen": {
             "report_type": "Profit and Loss",
             "account_number": "7",
-            "is_group": 1,
             "Ertr\u00e4ge aus Beteiligungen": {
                 "account_number": "7001",
                 "account_type": "",
@@ -6266,9 +6261,9 @@
             }
         },
         "Sonstige betriebliche Aufwendungen": {
+            "root_type": "Expenses",
             "report_type": "Profit and Loss",
             "account_number": "8",
-            "is_group": 1,
             "Zur freien Verf\u00fcgung (KL 1)": {
                 "account_number": "8001",
                 "account_type": "",
@@ -6277,7 +6272,6 @@
         },
         "Vortrags-, Kapital-, Korrektur- und statistische Konten": {
             "account_number": "9",
-            "is_group": 1,
             "Saldenvortr\u00e4ge, Sachkonten": {
                 "account_number": "9001",
                 "freeze_account": "No"
