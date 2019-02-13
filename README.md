@@ -4,6 +4,19 @@ Standardkontenrahmen 04 for ERPNext.
 
 Sponsored by [//SEIBERT/MEDIA](https://www.seibert-media.net/) and [tüit](https://www.tueit.de/).
 
+### Testen 
+
+```bash
+scp de_skr_hgb.json my.erp.com:/home/frappe/frappe-bench/apps/erpnext/erpnext/accounts/doctype/account/chart_of_accounts/verified/
+ssh my.erp.com
+cd frappe-bench/ && bench clear-cache
+```
+
+### Notizen
+
+* Die Länge der Kontennamen ist auf 140 Zeichen beschränkt.
+* Die führenden Nummern der Wurzel- und Gruppenkonten stammen aus dem Handelsgesetzbuch. Sie sind nur für den Jahresabschluss relevant.
+
 ### License
 
 Copyright (C) 2019 Raffael Meyer raffael@alyf.de

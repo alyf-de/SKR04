@@ -1,0 +1,288 @@
+{
+    "country_code": "de",
+    "name": "Deutschland - Bilanz und GuV nach HGB",
+    "tree": {
+        "Aktiva": {
+            "root_type": "Asset",
+            "A - Anlageverm\u00f6gen": {
+                "I - Immaterielle Verm\u00f6gensgegenst\u00e4nde": {
+                    "1 - Selbst geschaffene gewerbliche Schutzrechte und \u00e4hnliche Rechte und Werte": {
+                        "is_group": 1
+                    },
+                    "2 - entgeltlich erworbene Konzessionen, gewerbl. Schutzrechte und \u00e4hnl. Rechte und Werte sowie Lizenzen an solchen": {
+                        "is_group": 1
+                    },
+                    "3 - Gesch\u00e4fts- oder Firmenwert": {
+                        "is_group": 1
+                    },
+                    "4 - geleistete Anzahlungen": {
+                        "is_group": 1
+                    },
+                    "is_group": 1
+                },
+                "is_group": 1
+            },
+            "II - Sachanlagen": {
+                "1 - Grundst\u00fccke, grundst\u00fccksgleiche Rechte und Bauten einschl. der Bauten auf fremden Grundst\u00fccken": {
+                    "is_group": 1
+                },
+                "2 - technische Anlagen und Maschinen": {
+                    "is_group": 1
+                },
+                "3 - andere Anlagen, Betriebs- und Gesch\u00e4ftsausstattung": {
+                    "is_group": 1
+                },
+                "4 - geleistete Anzahlungen und Anlagen im Bau": {
+                    "is_group": 1
+                },
+                "is_group": 1
+            },
+            "III - Finanzanlagen": {
+                "1 - Anteile an verbundenen Unternehmen": {
+                    "is_group": 1
+                },
+                "2 - Ausleihungen an verbundene Unternehmen": {
+                    "is_group": 1
+                },
+                "3 - Beteiligungen": {
+                    "is_group": 1
+                },
+                "4 - Ausleihungen an Unternehmen, mit denen ein Beteiligungsverh\u00e4ltnis besteht": {
+                    "is_group": 1
+                },
+                "5 - Wertpapiere des Anlageverm\u00f6gens": {
+                    "is_group": 1
+                },
+                "6 - sonstige Ausleihungen": {
+                    "is_group": 1
+                },
+                "is_group": 1
+            },
+            "B - Umlaufverm\u00f6gen": {
+                "I - Vorr\u00e4te": {
+                    "1 - Roh-, Hilfs- und Betriebsstoffe": {
+                        "is_group": 1
+                    },
+                    "2 - unfertige Erzeugnisse, unfertige Leistungen": {
+                        "is_group": 1
+                    },
+                    "3 - fertige Erzeugnisse und Waren": {
+                        "is_group": 1
+                    },
+                    "is_group": 1
+                },
+                "II - Forderungen und sonstige Verm\u00f6gensgegenst\u00e4nde": {
+                    "account_type": "Receivable",
+                    "1 - Forderungen aus Lieferungen und Leistungen": {
+                        "account_type": "Receivable",
+                        "is_group": 1
+                    },
+                    "2 - Forderungen gegen verbundene Unternehmen": {
+                        "account_type": "Receivable",
+                        "is_group": 1
+                    },
+                    "3 - Forderungen gegen Unternehmen, mit denen ein Beteiligungsverh\u00e4ltnis besteht": {
+                        "account_type": "Receivable",
+                        "is_group": 1
+                    },
+                    "4 - sonstige Verm\u00f6gensgegenst\u00e4nde": {
+                        "account_type": "Receivable",
+                        "is_group": 1
+                    },
+                    "is_group": 1
+                },
+                "III - Wertpapiere": {
+                    "2 - sonstige Wertpapiere": {
+                        "is_group": 1
+                    },
+                    "is_group": 1
+                },
+                "IV - Kassenbestand, Bundesbankguthaben, Guthaben bei Kreditinstituten und Schecks": {
+                  
+                    "is_group": 1
+                },
+                "is_group": 1
+            },
+            "C - Rechnungsabgrenzungsposten": {
+                "is_group": 1
+            },
+            "D - Aktive latente Steuern": {
+                "account_type": "Tax",
+                "is_group": 1
+            },
+            "E - Aktiver Unterschiedsbetrag aus der Verm\u00f6gensverrechnung": {
+                "is_group": 1
+            },
+            "is_group": 1
+        },
+        "Passiva": {
+            "root_type": "Liability",
+            "A - Eigenkapital": {
+                "account_type": "Equity",
+                "I - Gezeichnetes Kapital": {
+                    "account_type": "Equity",
+                    "is_group": 1
+                },
+                "II - Kapitalr\u00fccklage": {
+                    "account_type": "Equity",
+                    "is_group": 1
+                },
+                "III - Gewinnr\u00fccklagen": {
+                    "account_type": "Equity",
+                    "1 - gesetzliche R\u00fccklage": {
+                        "account_type": "Equity",
+                        "is_group": 1
+                    },
+                    "2 - R\u00fccklage f\u00fcr Anteile an einem herrschenden oder mehrheitlich beteiligten Unternehmen": {
+                        "account_type": "Equity",
+                        "is_group": 1
+                    },
+                    "3 - satzungsm\u00e4\u00dfige R\u00fccklagen": {
+                        "account_type": "Equity",
+                        "is_group": 1
+                    },
+                    "4 - andere Gewinnr\u00fccklagen": {
+                        "account_type": "Equity",
+                        "is_group": 1
+                    },
+                    "is_group": 1
+                },
+                "IV - Gewinnvortrag/Verlustvortrag": {
+                    "account_type": "Equity",
+                    "is_group": 1
+                },
+                "V - Jahres\u00fcberschu\u00df/Jahresfehlbetrag": {
+                    "account_type": "Equity",
+                    "is_group": 1
+                },
+                "is_group": 1
+            },
+            "B - R\u00fcckstellungen": {
+                "1 - R\u00fcckstellungen f\u00fcr Pensionen und \u00e4hnliche Verpflichtungen": {
+                    "is_group": 1
+                },
+                "2 - Steuerr\u00fcckstellungen": {
+                    "is_group": 1
+                },
+                "3 - sonstige R\u00fcckstellungen": {
+                    "is_group": 1
+                },
+                "is_group": 1
+            },
+            "C - Verbindlichkeiten": {
+                "account_type": "Payable",
+                "1 - Anleihen": {
+                    "account_type": "Payable",
+                    "davon konvertibel": {
+                        "account_type": "Payable",
+                        "is_group": 1
+                    },
+                    "is_group": 1
+                },
+                "2 - Verbindlichkeiten gegen\u00fcber Kreditinstituten": {
+                    "account_type": "Payable",
+                    "is_group": 1
+                },
+                "3 - erhaltene Anzahlungen auf Bestellungen": {
+                    "account_type": "Payable",
+                    "is_group": 1
+                },
+                "4 - Verbindlichkeiten aus Lieferungen und Leistungen": {
+                    "account_type": "Payable",
+                    "is_group": 1
+                },
+                "5 - Verbindlichkeiten aus der Annahme gezogener Wechsel und der Ausstellung eigener Wechsel": {
+                    "account_type": "Payable",
+                    "is_group": 1
+                },
+                "6 - Verbindlichkeiten gegen\u00fcber verbundenen Unternehmen": {
+                    "account_type": "Payable",
+                    "is_group": 1
+                },
+                "7 - Verbindlichkeiten gegen\u00fcber Unternehmen, mit denen ein Beteiligungsverh\u00e4ltnis besteht": {
+                    "account_type": "Payable",
+                    "is_group": 1
+                },
+                "8 - sonstige Verbindlichkeiten": {
+                    "account_type": "Payable",
+                    "davon aus Steuern": {
+                        "account_type": "Payable",
+                        "is_group": 1
+                    },
+                    "davon im Rahmen der sozialen Sicherheit": {
+                        "account_type": "Payable",
+                        "is_group": 1
+                    },
+                    "is_group": 1
+                },
+                "is_group": 1
+            },
+            "E - Passive latente Steuern": {
+                "account_type": "Tax",
+                "is_group": 1
+            },
+            "D - Rechnungsabgrenzungsposten": {
+                "is_group": 1
+            },
+            "is_group": 1
+        },
+        "1 - Umsatzerl\u00f6se": {
+            "root_type": "Income",
+            "is_group": 1
+        },
+        "2 - Herstellungskosten der zur Erzielung der Umsatzerl\u00f6se erbrachten Leistungen": {
+            "root_type": "Expense",
+            "is_group": 1
+        },
+        "4 - Vertriebskosten": {
+            "root_type": "Expense",
+            "is_group": 1
+        },
+        "5 - allgemeine Verwaltungskosten": {
+            "root_type": "Expense",
+            "is_group": 1
+        },
+        "6 - sonstige betriebliche Ertr\u00e4ge": {
+            "root_type": "Income",
+            "is_group": 1
+        },
+        "7 - sonstige betriebliche Aufwendungen": {
+            "root_type": "Expense",
+            "is_group": 1
+        },
+        "8 - Ertr\u00e4ge aus Beteiligungen": {
+            "root_type": "Income",
+            "is_group": 1
+        },
+        "9 - Ertr\u00e4ge aus anderen Wertpapieren und Ausleihungen des Finanzanlageverm\u00f6gens": {
+            "root_type": "Income",
+            "is_group": 1
+        },
+        "10 - sonstige Zinsen und \u00e4hnliche Ertr\u00e4ge": {
+            "root_type": "Income",
+            "davon aus verbundenen Unternehmen": {
+                "is_group": 1
+            },
+            "is_group": 1
+        },
+        "11 - Abschreibungen auf Finanzanlagen und auf Wertpapiere des Umlaufverm\u00f6gens": {
+            "root_type": "Expense",
+            "is_group": 1
+        },
+        "12- Zinsen und \u00e4hnliche Aufwendungen": {
+            "root_type": "Expense",
+            "davon an verbundene Unternehmen": {
+                "is_group": 1
+            },
+            "is_group": 1
+        },
+        "13 - Steuern vom Einkommen und vom Ertrag": {
+            "root_type": "Expense",
+            "is_group": 1
+        },
+        "15 - sonstige Steuern": {
+            "root_type": "Expense",
+            "is_group": 1
+        }
+    }
+}
