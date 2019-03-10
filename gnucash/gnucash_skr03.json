@@ -1,0 +1,4495 @@
+﻿{
+	"gnc-account-example": {
+		"title": {
+			"__prefix": "gnc-act",
+			"__text": "Kontenrahmen SKR03"
+		},
+		"short-description": {
+			"__prefix": "gnc-act",
+			"__text": "Standardkontenrahmen SKR03"
+		},
+		"long-description": {
+			"__prefix": "gnc-act",
+			"__text": "Beta Version des Kontenrahmes SKR03 zum Erweitern und Umstrukturieren. Der Kontenrahmen sollte den eigenen Bedürfnissen angepasst werden was Struktur und Kontenbezeichnungen angeht. WICHTIG!: Die Privatkonten fließen nicht in die Berechnung des Berichtes Bilanz, sind jedoch im Bericht Bilanz aufgeführt. Die im Bericht Bilanz aufgeführte Passiva \"Gewinnrücklagen\" gibt den Saldo der GuV aus. Die Anlage dieses Kontenrahmens wurde von der Firma LiHAS - Linuxhaus Stuttgart - unterstützt."
+		},
+		"exclude-from-select-all": {
+			"__prefix": "gnc-act",
+			"__text": "1"
+		},
+		"account": [
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "Root Account"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "1972cce2e2364f95b2b0bc014502661d"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "ROOT"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "0"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "Aktiva"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "fc3b1f110a6686f3d40bb0c41c0f8de0"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "ASSET"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"description": {
+					"__prefix": "act",
+					"__text": "Aktiva"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "1972cce2e2364f95b2b0bc014502661d"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "Anlage- u. Kapitalkonten 0"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "27356188a1963c1dbf943022441d095f"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "ASSET"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"slots": {
+					"slot": [
+						{
+							"key": {
+								"__prefix": "slot",
+								"__text": "placeholder"
+							},
+							"value": {
+								"_type": "string",
+								"__prefix": "slot",
+								"__text": "true"
+							}
+						},
+						{
+							"key": {
+								"__prefix": "slot",
+								"__text": "tax-related"
+							},
+							"value": {
+								"_type": "integer",
+								"__prefix": "slot",
+								"__text": "1"
+							}
+						}
+					],
+					"__prefix": "act"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "fc3b1f110a6686f3d40bb0c41c0f8de0"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "0027 EDV-Software"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "8275e7a0b489940a2ba993f9019a898f"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "ASSET"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "0027"
+				},
+				"slots": {
+					"slot": {
+						"key": {
+							"__prefix": "slot",
+							"__text": "tax-related"
+						},
+						"value": {
+							"_type": "integer",
+							"__prefix": "slot",
+							"__text": "1"
+						}
+					},
+					"__prefix": "act"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "27356188a1963c1dbf943022441d095f"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "0410 Geschäftsausstattung"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "a588283077bd935dede66d13b2ee478f"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "ASSET"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "0410"
+				},
+				"slots": {
+					"slot": {
+						"key": {
+							"__prefix": "slot",
+							"__text": "tax-related"
+						},
+						"value": {
+							"_type": "integer",
+							"__prefix": "slot",
+							"__text": "1"
+						}
+					},
+					"__prefix": "act"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "27356188a1963c1dbf943022441d095f"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "0420 Büroeinrichtung"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "573063d23b81fe3f9917d80fe6cc41e7"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "ASSET"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "0420"
+				},
+				"slots": {
+					"slot": {
+						"key": {
+							"__prefix": "slot",
+							"__text": "tax-related"
+						},
+						"value": {
+							"_type": "integer",
+							"__prefix": "slot",
+							"__text": "1"
+						}
+					},
+					"__prefix": "act"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "27356188a1963c1dbf943022441d095f"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "0565 Darlehen"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "bd74fcb2d15fc7540ecc5ba8f27cbf48"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "ASSET"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "0565"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "27356188a1963c1dbf943022441d095f"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "0210 Maschinen"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "904b262e6f84659046267cad87ac5e90"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "ASSET"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "0210"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "27356188a1963c1dbf943022441d095f"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "0400 Betriebsausstattung"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "910d6c057660045a9958fb5a57ffc899"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "ASSET"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "0400"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "27356188a1963c1dbf943022441d095f"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "0430 Ladeneinrichtung"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "2876b41c069107076e7a18ec39bf4f9c"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "ASSET"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "0430"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "27356188a1963c1dbf943022441d095f"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "Finanzkonten 1"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "1b13a7614b5e84b0778963995e20d897"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "ASSET"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"slots": {
+					"slot": {
+						"key": {
+							"__prefix": "slot",
+							"__text": "placeholder"
+						},
+						"value": {
+							"_type": "string",
+							"__prefix": "slot",
+							"__text": "true"
+						}
+					},
+					"__prefix": "act"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "fc3b1f110a6686f3d40bb0c41c0f8de0"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "1100 Postbank"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "9fe8d61dac9cf62b3f12e6c71a4385b2"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "BANK"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "1100"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "1b13a7614b5e84b0778963995e20d897"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "1200 Bankkonto"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "875ec51cd332f3b75c15a2a9ca309ebd"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "BANK"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "1200"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "1b13a7614b5e84b0778963995e20d897"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "1590 Durchlaufende Posten"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "f048cb49a135a298d5df958a4c63ba22"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "ASSET"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "1590"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "1b13a7614b5e84b0778963995e20d897"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "1371 Gewinnermittlung §4/3 nicht Ergebniswirksam"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "58c8b84a785d7feac255d381943076df"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "ASSET"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "1371"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "1b13a7614b5e84b0778963995e20d897"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "1571 Abziehbare VSt. 7%"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "7edc3c319713c53035b3e439ccec5e2b"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "ASSET"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "1571"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "1b13a7614b5e84b0778963995e20d897"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "1576 Abziehbare VSt. 19%"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "507b25d5d47d57ba115929b70a32fa5e"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "ASSET"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "1576"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "1b13a7614b5e84b0778963995e20d897"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "1577 Abziehbare VStr. nach §13b UStG 19%"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "ac0fb64d0cfc2b88444527ce8c8682fe"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "ASSET"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "1577"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "1b13a7614b5e84b0778963995e20d897"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "1400 Ford. a. Lieferungen und Leistungen"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "2fe36b4ddde053387e42aa893a94b91b"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "RECEIVABLE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "1400"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "1b13a7614b5e84b0778963995e20d897"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "Wareneingangs- u. Bestandskonten 3"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "a26df9927a82bcb58a1facb4cde6f221"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "ASSET"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"slots": {
+					"slot": {
+						"key": {
+							"__prefix": "slot",
+							"__text": "placeholder"
+						},
+						"value": {
+							"_type": "string",
+							"__prefix": "slot",
+							"__text": "true"
+						}
+					},
+					"__prefix": "act"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "fc3b1f110a6686f3d40bb0c41c0f8de0"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "3120 Leistungen §13b UStG 19% Vorsteuer, 19% Umsatzsteuer"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "39c180a4e3647d347ebc3e16e984372b"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "ASSET"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "3120"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "a26df9927a82bcb58a1facb4cde6f221"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "3400 Wareneingang VSt. 19%"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "01e4b246665a54d40466ba88f5d1d34e"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "ASSET"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "3400"
+				},
+				"slots": {
+					"slot": {
+						"key": {
+							"__prefix": "slot",
+							"__text": "tax-related"
+						},
+						"value": {
+							"_type": "integer",
+							"__prefix": "slot",
+							"__text": "1"
+						}
+					},
+					"__prefix": "act"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "a26df9927a82bcb58a1facb4cde6f221"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "Passiva"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "845b29bc14787bded30488e8d51eec0b"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "LIABILITY"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"description": {
+					"__prefix": "act",
+					"__text": "Passiva"
+				},
+				"slots": {
+					"slot": {
+						"key": {
+							"__prefix": "slot",
+							"__text": "placeholder"
+						},
+						"value": {
+							"_type": "string",
+							"__prefix": "slot",
+							"__text": "true"
+						}
+					},
+					"__prefix": "act"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "1972cce2e2364f95b2b0bc014502661d"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "Umsatzsteuer"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "dea7f32e6a447d2d1cd7048932c98265"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "LIABILITY"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"slots": {
+					"slot": {
+						"key": {
+							"__prefix": "slot",
+							"__text": "placeholder"
+						},
+						"value": {
+							"_type": "string",
+							"__prefix": "slot",
+							"__text": "true"
+						}
+					},
+					"__prefix": "act"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "845b29bc14787bded30488e8d51eec0b"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "1771 Umsatzsteuer 7%"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "d699c440f7817339d2fe60dd875520b6"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "LIABILITY"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "1771"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "dea7f32e6a447d2d1cd7048932c98265"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "1776 Umsatzsteuer 19%"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "55a2876edef147ed7631486de4af558c"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "LIABILITY"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "1776"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "dea7f32e6a447d2d1cd7048932c98265"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "1780 Umsatzsteuer-Vorauszahlung"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "4b5e1c2b17024a7721d0955c9f140dd6"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "LIABILITY"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "1780"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "dea7f32e6a447d2d1cd7048932c98265"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "1781 Umsatzsteuer-Vorauszahlung 1/11"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "08793cd11dfca23d7b435a7338db02da"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "LIABILITY"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "1781"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "dea7f32e6a447d2d1cd7048932c98265"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "1787 Umsatzsteuer § 13b UStG 19%"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "8e1583dfe60365b756f5365741250001"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "LIABILITY"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "1787"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "dea7f32e6a447d2d1cd7048932c98265"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "1790 Umsatzsteuer Vorjahr"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "635fe36261db8b9beda522420f564028"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "LIABILITY"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "1790"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "dea7f32e6a447d2d1cd7048932c98265"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "1791 Umsatzsteuer frühere Jahre"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "b2d79b416fee27d4d6a38643f6ad0d45"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "LIABILITY"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "1791"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "dea7f32e6a447d2d1cd7048932c98265"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "Verbindlichkeiten"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "a31fca8b7c5eb2cb0111f1f97696ac93"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "LIABILITY"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"slots": {
+					"slot": {
+						"key": {
+							"__prefix": "slot",
+							"__text": "placeholder"
+						},
+						"value": {
+							"_type": "string",
+							"__prefix": "slot",
+							"__text": "true"
+						}
+					},
+					"__prefix": "act"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "845b29bc14787bded30488e8d51eec0b"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "1600 Verblk. aus Lieferungen u. Leistungen"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "1bf9f2675a36b278adcf6da68a7e4cbe"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "PAYABLE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "1600"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "a31fca8b7c5eb2cb0111f1f97696ac93"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "Erlöse u. Erträge 2/8"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "3f31fc649f19b5201f22f7648c3f7107"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "INCOME"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"slots": {
+					"slot": {
+						"key": {
+							"__prefix": "slot",
+							"__text": "placeholder"
+						},
+						"value": {
+							"_type": "string",
+							"__prefix": "slot",
+							"__text": "true"
+						}
+					},
+					"__prefix": "act"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "1972cce2e2364f95b2b0bc014502661d"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "Erlöskonten 8"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "fd04e181ab83b37b80a4609b0806e954"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "INCOME"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"slots": {
+					"slot": {
+						"key": {
+							"__prefix": "slot",
+							"__text": "placeholder"
+						},
+						"value": {
+							"_type": "string",
+							"__prefix": "slot",
+							"__text": "true"
+						}
+					},
+					"__prefix": "act"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "3f31fc649f19b5201f22f7648c3f7107"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "8400 Erlöse USt. 19%"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "d75d796e879b0ad9b2732d698ae9e838"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "INCOME"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "8400"
+				},
+				"slots": {
+					"slot": {
+						"key": {
+							"__prefix": "slot",
+							"__text": "tax-related"
+						},
+						"value": {
+							"_type": "integer",
+							"__prefix": "slot",
+							"__text": "1"
+						}
+					},
+					"__prefix": "act"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "fd04e181ab83b37b80a4609b0806e954"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "8300 Erlöse USt. 7%"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "0c82316c2aecaa02ce1b4ecb223f6f5d"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "INCOME"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "8300"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "fd04e181ab83b37b80a4609b0806e954"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "Ertragskonten 2"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "4f552b822559c82eaa816d0049f70064"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "INCOME"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"slots": {
+					"slot": {
+						"key": {
+							"__prefix": "slot",
+							"__text": "placeholder"
+						},
+						"value": {
+							"_type": "string",
+							"__prefix": "slot",
+							"__text": "true"
+						}
+					},
+					"__prefix": "act"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "3f31fc649f19b5201f22f7648c3f7107"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "2650 sonstige Zinsen und ähnliche Erträge"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "cc08ab7c747853f5f7ea6b384fdd8b4d"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "INCOME"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "2650"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "4f552b822559c82eaa816d0049f70064"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "2500 Außerordentliche Erträge"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "5634359999c43ba58697553d1d905c4c"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "INCOME"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "2500"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "4f552b822559c82eaa816d0049f70064"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "2700 Sonstige Erträge"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "067716095fef7e694a2e0c40f1eaaefd"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "INCOME"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "2700"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "4f552b822559c82eaa816d0049f70064"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "Aufwendungen 2/4"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "be324e400d3b67510f89afd18de776e3"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"slots": {
+					"slot": {
+						"key": {
+							"__prefix": "slot",
+							"__text": "placeholder"
+						},
+						"value": {
+							"_type": "string",
+							"__prefix": "slot",
+							"__text": "true"
+						}
+					},
+					"__prefix": "act"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "1972cce2e2364f95b2b0bc014502661d"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "Abschreibungen"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "ad3f063a8200c1faa0331e2d9eb3ae04"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"slots": {
+					"slot": {
+						"key": {
+							"__prefix": "slot",
+							"__text": "placeholder"
+						},
+						"value": {
+							"_type": "string",
+							"__prefix": "slot",
+							"__text": "true"
+						}
+					},
+					"__prefix": "act"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "be324e400d3b67510f89afd18de776e3"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4855 Sofortabschreibung GWG"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "cf214c888424ce036704bd526650a4c1"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4855"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "ad3f063a8200c1faa0331e2d9eb3ae04"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "Kfz-Kosten"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "8488954a5834d5484ed57439a0d43305"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"slots": {
+					"slot": {
+						"key": {
+							"__prefix": "slot",
+							"__text": "placeholder"
+						},
+						"value": {
+							"_type": "string",
+							"__prefix": "slot",
+							"__text": "true"
+						}
+					},
+					"__prefix": "act"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "be324e400d3b67510f89afd18de776e3"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4510 Kfz-Steuer"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "4355e4bceaa024b71efb3223ac6576c0"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4510"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "8488954a5834d5484ed57439a0d43305"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4520 Kfz-Versicherungen"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "4395e7b49fc7d34db620e6249836d747"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4520"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "8488954a5834d5484ed57439a0d43305"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4530 laufende Kfz-Betriebskosten"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "9bcbd663916f135d81b8eff6dc8b8819"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4530"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "8488954a5834d5484ed57439a0d43305"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4540 Kfz-Reparaturen"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "5359164e661dd33c4bdb98b5149b07d1"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4540"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "8488954a5834d5484ed57439a0d43305"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4570 Fremdfahrzeuge"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "3b92417001893aa765edaa7109b2d48a"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4570"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "8488954a5834d5484ed57439a0d43305"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4580 sonstige Kfz-Kosten"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "e4c3ff3a921558869191a648aeb9b0e3"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4580"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "8488954a5834d5484ed57439a0d43305"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "Personalkosten"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "43953979cf408743814cb6887d5ec022"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"slots": {
+					"slot": {
+						"key": {
+							"__prefix": "slot",
+							"__text": "placeholder"
+						},
+						"value": {
+							"_type": "string",
+							"__prefix": "slot",
+							"__text": "true"
+						}
+					},
+					"__prefix": "act"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "be324e400d3b67510f89afd18de776e3"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4120 Gehälter"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "8f21199517fcfd70ad2ad6aaa3e714b6"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4120"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "43953979cf408743814cb6887d5ec022"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4130 gesetzliche soziale Aufwendungen"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "46ba645d075b6a1f3a38824d812f8818"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4130"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "43953979cf408743814cb6887d5ec022"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4165 Aufwendungen für Altersvorsorge"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "e89eafba1acc736a7ba74882a7f8c836"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4165"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "43953979cf408743814cb6887d5ec022"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4170 Vermögenswirksame Leistungen"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "88bc69e1ff8977cd70c52567dde8107d"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4170"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "43953979cf408743814cb6887d5ec022"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4190 Aushilfslöhne"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "d74350b9ad5583b533fd906ec837d9fe"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4190"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "43953979cf408743814cb6887d5ec022"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "Raumkosten"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "9adef6f318a931fbb8519a823e2c20e8"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"slots": {
+					"slot": {
+						"key": {
+							"__prefix": "slot",
+							"__text": "placeholder"
+						},
+						"value": {
+							"_type": "string",
+							"__prefix": "slot",
+							"__text": "true"
+						}
+					},
+					"__prefix": "act"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "be324e400d3b67510f89afd18de776e3"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4210 Miete und Nebenkosten"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "b6e84a2fcf1754f1f6f1f71913f03a1d"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4210"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "9adef6f318a931fbb8519a823e2c20e8"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4240 Gas, Wasser, Strom (Verwaltung, Vertrieb)"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "d41823e7c279286dd74c6ec757dcb305"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4240"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "9adef6f318a931fbb8519a823e2c20e8"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4250 Reinigung"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "db313359a146b610ce80a36dde18bf01"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4250"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "9adef6f318a931fbb8519a823e2c20e8"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "Reparatur/Instandhaltung"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "accaec28a4afcf3c82570da4c9343c2d"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"slots": {
+					"slot": {
+						"key": {
+							"__prefix": "slot",
+							"__text": "placeholder"
+						},
+						"value": {
+							"_type": "string",
+							"__prefix": "slot",
+							"__text": "true"
+						}
+					},
+					"__prefix": "act"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "be324e400d3b67510f89afd18de776e3"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4805 Reparatur u. Instandh. von Anlagen/Maschinen u. Betriebs- u. Geschäftsausst."
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "b5d6461bb3028d13faa8bee2981925a1"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4805"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "accaec28a4afcf3c82570da4c9343c2d"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "Versicherungsbeiträge"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "709bf14d69164a6c2a48e6c0e13ece37"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"slots": {
+					"slot": {
+						"key": {
+							"__prefix": "slot",
+							"__text": "placeholder"
+						},
+						"value": {
+							"_type": "string",
+							"__prefix": "slot",
+							"__text": "true"
+						}
+					},
+					"__prefix": "act"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "be324e400d3b67510f89afd18de776e3"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4360 Versicherungen"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "7484251f3d5fc7ec71419b2fba733a78"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4360"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "709bf14d69164a6c2a48e6c0e13ece37"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4380 Beiträge"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "f2b1ad75fd3b7fc4473972a9c2675cbf"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4380"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "709bf14d69164a6c2a48e6c0e13ece37"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4390 sonstige Ausgaben"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "a2d552e480b95123e90be434b3ac9653"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4390"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "709bf14d69164a6c2a48e6c0e13ece37"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4396 steuerlich abzugsfähige Verspätungszuschläge und Zwangsgelder"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "0c73c5dc5e72bb4962b83ddc85991101"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4396"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "709bf14d69164a6c2a48e6c0e13ece37"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "Werbe-/Reisekosten"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "a657ade965a1429d44d830d3832bf9aa"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"slots": {
+					"slot": {
+						"key": {
+							"__prefix": "slot",
+							"__text": "placeholder"
+						},
+						"value": {
+							"_type": "string",
+							"__prefix": "slot",
+							"__text": "true"
+						}
+					},
+					"__prefix": "act"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "be324e400d3b67510f89afd18de776e3"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4610 Werbekosten"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "2d90f835fcb74d7a77b4a2a2b40c777a"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4610"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "a657ade965a1429d44d830d3832bf9aa"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4653 Aufmerksamkeiten"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "790770c5f93cff7d585bca1627446716"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4653"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "a657ade965a1429d44d830d3832bf9aa"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4665 nicht abzugsfähige Betriebsausg. aus Werbe-, Repräs.- u. Reisekosten"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "235a6225c2c7d2ffa865345e78cae283"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4665"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "a657ade965a1429d44d830d3832bf9aa"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4670 Reisekosten Unternehmer"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "dda3ae53573975cd05fab1d3cdf40806"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4670"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "a657ade965a1429d44d830d3832bf9aa"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "verschiedene Kosten"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "d0c00095e4b00f9f25253307be05e885"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"slots": {
+					"slot": {
+						"key": {
+							"__prefix": "slot",
+							"__text": "placeholder"
+						},
+						"value": {
+							"_type": "string",
+							"__prefix": "slot",
+							"__text": "true"
+						}
+					},
+					"__prefix": "act"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "be324e400d3b67510f89afd18de776e3"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4910 Porto"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "b84666b6b2d17f4be4a2cc15e595b30d"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4910"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "d0c00095e4b00f9f25253307be05e885"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4920 Telekom"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "892bb0974aa6c422f63b5df5354e8f7f"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4920"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "d0c00095e4b00f9f25253307be05e885"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4921 Mobilfunk D2"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "20a13b07d90c5b385e78190525439aa2"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4921"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "d0c00095e4b00f9f25253307be05e885"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4922 Internet"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "4d57d9103ab150ad4f01bc7a918fd0cc"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4922"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "d0c00095e4b00f9f25253307be05e885"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4930 Bürobedarf"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "ac4d7c452835096c373f1a94dc3104f4"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4930"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "d0c00095e4b00f9f25253307be05e885"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4940 Zeitschriften, Bücher"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "1bac306450e7bc0619e42c11ab791204"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4940"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "d0c00095e4b00f9f25253307be05e885"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4945 Fortbildungskosten"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "6be35acc206b144ee23c07086bc7a856"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4945"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "d0c00095e4b00f9f25253307be05e885"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4955 Buchführungskosten"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "25afa584627e0c0e8681bd8a82a77d14"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4955"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "d0c00095e4b00f9f25253307be05e885"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4957 Abschluß- u. Prüfungskosten"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "bf093094a55c036a193357ebcafcab67"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4957"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "d0c00095e4b00f9f25253307be05e885"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4970 Nebenkosten des Geldverkehrs"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "4f476c9b65684d56630db45690b9d4fc"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4970"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "d0c00095e4b00f9f25253307be05e885"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "4985 Werkzeuge und Kleingeräte"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "a5b36148c3fc06080973a5d25f28225b"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "4985"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "d0c00095e4b00f9f25253307be05e885"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "Zinsaufwendungen"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "8d2641f8bbc41aa863274bb496002f3e"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"slots": {
+					"slot": {
+						"key": {
+							"__prefix": "slot",
+							"__text": "placeholder"
+						},
+						"value": {
+							"_type": "string",
+							"__prefix": "slot",
+							"__text": "true"
+						}
+					},
+					"__prefix": "act"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "be324e400d3b67510f89afd18de776e3"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "2110 Zinsaufwendungen für kurzfristige Verbindlichkeiten"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "2d20e36f8abb4e366c8e3e2783bdafab"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "2110"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "8d2641f8bbc41aa863274bb496002f3e"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "2121 Zinsaufwendungen für KFZ Finanzierung"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "17651501792b93b06832634462ddddae"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EXPENSE"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "2121"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "8d2641f8bbc41aa863274bb496002f3e"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "Anfangsbestand 9"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "2d4eb2e0ef3bab0ac50b87c84babcf5d"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EQUITY"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"description": {
+					"__prefix": "act",
+					"__text": "Saldenvortragskonten"
+				},
+				"slots": {
+					"slot": {
+						"key": {
+							"__prefix": "slot",
+							"__text": "placeholder"
+						},
+						"value": {
+							"_type": "string",
+							"__prefix": "slot",
+							"__text": "true"
+						}
+					},
+					"__prefix": "act"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "1972cce2e2364f95b2b0bc014502661d"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "Saldenvortragskonten"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "26c3f10c1c7621661c1b813d6141280d"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EQUITY"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"slots": {
+					"slot": {
+						"key": {
+							"__prefix": "slot",
+							"__text": "placeholder"
+						},
+						"value": {
+							"_type": "string",
+							"__prefix": "slot",
+							"__text": "true"
+						}
+					},
+					"__prefix": "act"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "2d4eb2e0ef3bab0ac50b87c84babcf5d"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "9000 Saldenvortrag Sachkonten"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "fa346eee1add66248bff420aafeebebb"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EQUITY"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "9000"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "26c3f10c1c7621661c1b813d6141280d"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "9008 Saldenvorträge Debitoren"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "1f36ecbf065faa2b25a0749ceee72efa"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EQUITY"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "9008"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "26c3f10c1c7621661c1b813d6141280d"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "9009 Saldenvorträge Kreditoren"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "a6c754f12d0b9129790d9f52c5361778"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EQUITY"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "9009"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "26c3f10c1c7621661c1b813d6141280d"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "Privatkonten 1"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "1888a7d2fbbdede8446090a31651565f"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EQUITY"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"slots": {
+					"slot": {
+						"key": {
+							"__prefix": "slot",
+							"__text": "placeholder"
+						},
+						"value": {
+							"_type": "string",
+							"__prefix": "slot",
+							"__text": "true"
+						}
+					},
+					"__prefix": "act"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "1972cce2e2364f95b2b0bc014502661d"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "Privatentnahmen/-einlagen"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "b9ae1b059749ea81c757a9adad39db1b"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EQUITY"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"slots": {
+					"slot": {
+						"key": {
+							"__prefix": "slot",
+							"__text": "placeholder"
+						},
+						"value": {
+							"_type": "string",
+							"__prefix": "slot",
+							"__text": "true"
+						}
+					},
+					"__prefix": "act"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "1888a7d2fbbdede8446090a31651565f"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "1800 Privatentnahme allgemein"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "0e6b8f9c973149c8d1c00e40919e9e21"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EQUITY"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "1800"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "b9ae1b059749ea81c757a9adad39db1b"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "1810 Privatsteuern"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "fff2b92b43dc9d9690a7e5c365d2baf6"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EQUITY"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "1810"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "b9ae1b059749ea81c757a9adad39db1b"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "1820 Sonderausgaben beschränkt abzugsfähig"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "5c008564ba99d0dfe6f20166adde5e6c"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EQUITY"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "1820"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "b9ae1b059749ea81c757a9adad39db1b"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "1830 Sonderausgaben unbeschränkt abzugsfähig"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "d89a53718b4753ac5407b38ab43f1339"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EQUITY"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "1830"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "b9ae1b059749ea81c757a9adad39db1b"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "1850 Außergewöhnliche Belastungen"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "ab2c3c1b68e9c21ca3bce32c729c5cdc"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EQUITY"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "1850"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "b9ae1b059749ea81c757a9adad39db1b"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			},
+			{
+				"name": {
+					"__prefix": "act",
+					"__text": "1890 Privateinlagen"
+				},
+				"id": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "4057a69542c170211849f7705354aadb"
+				},
+				"type": {
+					"__prefix": "act",
+					"__text": "EQUITY"
+				},
+				"commodity": {
+					"space": {
+						"__prefix": "cmdty",
+						"__text": "ISO4217"
+					},
+					"id": {
+						"__prefix": "cmdty",
+						"__text": "EUR"
+					},
+					"__prefix": "act"
+				},
+				"commodity-scu": {
+					"__prefix": "act",
+					"__text": "100"
+				},
+				"code": {
+					"__prefix": "act",
+					"__text": "1890"
+				},
+				"parent": {
+					"_type": "new",
+					"__prefix": "act",
+					"__text": "b9ae1b059749ea81c757a9adad39db1b"
+				},
+				"_version": "2.0.0",
+				"__prefix": "gnc"
+			}
+		],
+		"_xmlns": "http://www.gnucash.org/XML/",
+		"_xmlns:act": "http://www.gnucash.org/XML/act",
+		"_xmlns:addr": "http://www.gnucash.org/XML/addr",
+		"_xmlns:bgt": "http://www.gnucash.org/XML/bgt",
+		"_xmlns:billterm": "http://www.gnucash.org/XML/billterm",
+		"_xmlns:book": "http://www.gnucash.org/XML/book",
+		"_xmlns:bt-days": "http://www.gnucash.org/XML/bt-days",
+		"_xmlns:bt-prox": "http://www.gnucash.org/XML/bt-prox",
+		"_xmlns:cd": "http://www.gnucash.org/XML/cd",
+		"_xmlns:cmdty": "http://www.gnucash.org/XML/cmdty",
+		"_xmlns:cust": "http://www.gnucash.org/XML/cust",
+		"_xmlns:employee": "http://www.gnucash.org/XML/employee",
+		"_xmlns:fs": "http://www.gnucash.org/XML/fs",
+		"_xmlns:gnc": "http://www.gnucash.org/XML/gnc",
+		"_xmlns:gnc-act": "http://www.gnucash.org/XML/gnc-act",
+		"_xmlns:invoice": "http://www.gnucash.org/XML/invoice",
+		"_xmlns:job": "http://www.gnucash.org/XML/job",
+		"_xmlns:lot": "http://www.gnucash.org/XML/lot",
+		"_xmlns:order": "http://www.gnucash.org/XML/order",
+		"_xmlns:owner": "http://www.gnucash.org/XML/owner",
+		"_xmlns:price": "http://www.gnucash.org/XML/price",
+		"_xmlns:recurrence": "http://www.gnucash.org/XML/recurrence",
+		"_xmlns:slot": "http://www.gnucash.org/XML/slot",
+		"_xmlns:split": "http://www.gnucash.org/XML/split",
+		"_xmlns:sx": "http://www.gnucash.org/XML/sx",
+		"_xmlns:taxtable": "http://www.gnucash.org/XML/taxtable",
+		"_xmlns:trn": "http://www.gnucash.org/XML/trn",
+		"_xmlns:ts": "http://www.gnucash.org/XML/ts",
+		"_xmlns:tte": "http://www.gnucash.org/XML/tte",
+		"_xmlns:entry": "http://www.gnucash.org/XML/entry",
+		"_xmlns:vendor": "http://www.gnucash.org/XML/vendor"
+	}
+}
