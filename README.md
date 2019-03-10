@@ -6,6 +6,7 @@ Sponsored by [//SEIBERT/MEDIA](https://www.seibert-media.net/) and [tüit](https
 
 * `de_skr_hgb.json` enthält die Struktur von Bilanz und GuV-Rechnung nach HGB, **ohne** Konten,
 * `de_skr04_hgb.json` enthält die Konten des SKR 04, eingeordnet in die Struktur von Bilanz und GuV-Rechnung nach HGB.
+* [SKR03 von spritelite](https://github.com/spritelite/SKR03/blob/master/de_kontenplan_SKR03_UKV.json)
 
 ![Struktur des Kontenrahmens](oberkonten.png)
 
