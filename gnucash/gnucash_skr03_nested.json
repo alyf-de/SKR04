@@ -1,0 +1,659 @@
+{
+    "id": "1972cce2e2364f95b2b0bc014502661d",
+    "name": "Root Account",
+    "account_type": "Root",
+    "is_group": 1,
+    "children": [
+        {
+            "id": "fc3b1f110a6686f3d40bb0c41c0f8de0",
+            "name": "Aktiva",
+            "account_type": "Asset",
+            "is_group": 1,
+            "description": "Aktiva",
+            "children": [
+                {
+                    "id": "27356188a1963c1dbf943022441d095f",
+                    "name": "Anlage- u. Kapitalkonten 0",
+                    "account_type": "Asset",
+                    "is_group": 1,
+                    "children": [
+                        {
+                            "id": "8275e7a0b489940a2ba993f9019a898f",
+                            "name": "0027 EDV-Software",
+                            "account_type": "Asset",
+                            "account_number": "0027"
+                        },
+                        {
+                            "id": "a588283077bd935dede66d13b2ee478f",
+                            "name": "0410 Gesch\u00e4ftsausstattung",
+                            "account_type": "Asset",
+                            "account_number": "0410"
+                        },
+                        {
+                            "id": "573063d23b81fe3f9917d80fe6cc41e7",
+                            "name": "0420 B\u00fcroeinrichtung",
+                            "account_type": "Asset",
+                            "account_number": "0420"
+                        },
+                        {
+                            "id": "bd74fcb2d15fc7540ecc5ba8f27cbf48",
+                            "name": "0565 Darlehen",
+                            "account_type": "Asset",
+                            "account_number": "0565"
+                        },
+                        {
+                            "id": "904b262e6f84659046267cad87ac5e90",
+                            "name": "0210 Maschinen",
+                            "account_type": "Asset",
+                            "account_number": "0210"
+                        },
+                        {
+                            "id": "910d6c057660045a9958fb5a57ffc899",
+                            "name": "0400 Betriebsausstattung",
+                            "account_type": "Asset",
+                            "account_number": "0400"
+                        },
+                        {
+                            "id": "2876b41c069107076e7a18ec39bf4f9c",
+                            "name": "0430 Ladeneinrichtung",
+                            "account_type": "Asset",
+                            "account_number": "0430"
+                        }
+                    ]
+                },
+                {
+                    "id": "1b13a7614b5e84b0778963995e20d897",
+                    "name": "Finanzkonten 1",
+                    "account_type": "Asset",
+                    "is_group": 1,
+                    "children": [
+                        {
+                            "id": "9fe8d61dac9cf62b3f12e6c71a4385b2",
+                            "name": "1100 Postbank",
+                            "account_type": "Bank",
+                            "account_number": "1100"
+                        },
+                        {
+                            "id": "875ec51cd332f3b75c15a2a9ca309ebd",
+                            "name": "1200 Bankkonto",
+                            "account_type": "Bank",
+                            "account_number": "1200"
+                        },
+                        {
+                            "id": "f048cb49a135a298d5df958a4c63ba22",
+                            "name": "1590 Durchlaufende Posten",
+                            "account_type": "Asset",
+                            "account_number": "1590"
+                        },
+                        {
+                            "id": "58c8b84a785d7feac255d381943076df",
+                            "name": "1371 Gewinnermittlung \u00a74/3 nicht Ergebniswirksam",
+                            "account_type": "Asset",
+                            "account_number": "1371"
+                        },
+                        {
+                            "id": "7edc3c319713c53035b3e439ccec5e2b",
+                            "name": "1571 Abziehbare VSt. 7%",
+                            "account_type": "Asset",
+                            "account_number": "1571"
+                        },
+                        {
+                            "id": "507b25d5d47d57ba115929b70a32fa5e",
+                            "name": "1576 Abziehbare VSt. 19%",
+                            "account_type": "Asset",
+                            "account_number": "1576"
+                        },
+                        {
+                            "id": "ac0fb64d0cfc2b88444527ce8c8682fe",
+                            "name": "1577 Abziehbare VStr. nach \u00a713b UStG 19%",
+                            "account_type": "Asset",
+                            "account_number": "1577"
+                        },
+                        {
+                            "id": "2fe36b4ddde053387e42aa893a94b91b",
+                            "name": "1400 Ford. a. Lieferungen und Leistungen",
+                            "account_type": "Receivable",
+                            "account_number": "1400"
+                        }
+                    ]
+                },
+                {
+                    "id": "a26df9927a82bcb58a1facb4cde6f221",
+                    "name": "Wareneingangs- u. Bestandskonten 3",
+                    "account_type": "Asset",
+                    "is_group": 1,
+                    "children": [
+                        {
+                            "id": "39c180a4e3647d347ebc3e16e984372b",
+                            "name": "3120 Leistungen \u00a713b UStG 19% Vorsteuer, 19% Umsatzsteuer",
+                            "account_type": "Asset",
+                            "account_number": "3120"
+                        },
+                        {
+                            "id": "01e4b246665a54d40466ba88f5d1d34e",
+                            "name": "3400 Wareneingang VSt. 19%",
+                            "account_type": "Asset",
+                            "account_number": "3400"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "845b29bc14787bded30488e8d51eec0b",
+            "name": "Passiva",
+            "account_type": "Liability",
+            "is_group": 1,
+            "description": "Passiva",
+            "children": [
+                {
+                    "id": "dea7f32e6a447d2d1cd7048932c98265",
+                    "name": "Umsatzsteuer",
+                    "account_type": "Liability",
+                    "is_group": 1,
+                    "children": [
+                        {
+                            "id": "d699c440f7817339d2fe60dd875520b6",
+                            "name": "1771 Umsatzsteuer 7%",
+                            "account_type": "Liability",
+                            "account_number": "1771"
+                        },
+                        {
+                            "id": "55a2876edef147ed7631486de4af558c",
+                            "name": "1776 Umsatzsteuer 19%",
+                            "account_type": "Liability",
+                            "account_number": "1776"
+                        },
+                        {
+                            "id": "4b5e1c2b17024a7721d0955c9f140dd6",
+                            "name": "1780 Umsatzsteuer-Vorauszahlung",
+                            "account_type": "Liability",
+                            "account_number": "1780"
+                        },
+                        {
+                            "id": "08793cd11dfca23d7b435a7338db02da",
+                            "name": "1781 Umsatzsteuer-Vorauszahlung 1/11",
+                            "account_type": "Liability",
+                            "account_number": "1781"
+                        },
+                        {
+                            "id": "8e1583dfe60365b756f5365741250001",
+                            "name": "1787 Umsatzsteuer \u00a7 13b UStG 19%",
+                            "account_type": "Liability",
+                            "account_number": "1787"
+                        },
+                        {
+                            "id": "635fe36261db8b9beda522420f564028",
+                            "name": "1790 Umsatzsteuer Vorjahr",
+                            "account_type": "Liability",
+                            "account_number": "1790"
+                        },
+                        {
+                            "id": "b2d79b416fee27d4d6a38643f6ad0d45",
+                            "name": "1791 Umsatzsteuer fr\u00fchere Jahre",
+                            "account_type": "Liability",
+                            "account_number": "1791"
+                        }
+                    ]
+                },
+                {
+                    "id": "a31fca8b7c5eb2cb0111f1f97696ac93",
+                    "name": "Verbindlichkeiten",
+                    "account_type": "Liability",
+                    "is_group": 1,
+                    "children": [
+                        {
+                            "id": "1bf9f2675a36b278adcf6da68a7e4cbe",
+                            "name": "1600 Verblk. aus Lieferungen u. Leistungen",
+                            "account_type": "Payable",
+                            "account_number": "1600"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "3f31fc649f19b5201f22f7648c3f7107",
+            "name": "Erl\u00f6se u. Ertr\u00e4ge 2/8",
+            "account_type": "Income",
+            "is_group": 1,
+            "children": [
+                {
+                    "id": "fd04e181ab83b37b80a4609b0806e954",
+                    "name": "Erl\u00f6skonten 8",
+                    "account_type": "Income",
+                    "is_group": 1,
+                    "children": [
+                        {
+                            "id": "d75d796e879b0ad9b2732d698ae9e838",
+                            "name": "8400 Erl\u00f6se USt. 19%",
+                            "account_type": "Income",
+                            "account_number": "8400"
+                        },
+                        {
+                            "id": "0c82316c2aecaa02ce1b4ecb223f6f5d",
+                            "name": "8300 Erl\u00f6se USt. 7%",
+                            "account_type": "Income",
+                            "account_number": "8300"
+                        }
+                    ]
+                },
+                {
+                    "id": "4f552b822559c82eaa816d0049f70064",
+                    "name": "Ertragskonten 2",
+                    "account_type": "Income",
+                    "is_group": 1,
+                    "children": [
+                        {
+                            "id": "cc08ab7c747853f5f7ea6b384fdd8b4d",
+                            "name": "2650 sonstige Zinsen und \u00e4hnliche Ertr\u00e4ge",
+                            "account_type": "Income",
+                            "account_number": "2650"
+                        },
+                        {
+                            "id": "5634359999c43ba58697553d1d905c4c",
+                            "name": "2500 Au\u00dferordentliche Ertr\u00e4ge",
+                            "account_type": "Income",
+                            "account_number": "2500"
+                        },
+                        {
+                            "id": "067716095fef7e694a2e0c40f1eaaefd",
+                            "name": "2700 Sonstige Ertr\u00e4ge",
+                            "account_type": "Income",
+                            "account_number": "2700"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "be324e400d3b67510f89afd18de776e3",
+            "name": "Aufwendungen 2/4",
+            "account_type": "Expense",
+            "is_group": 1,
+            "children": [
+                {
+                    "id": "ad3f063a8200c1faa0331e2d9eb3ae04",
+                    "name": "Abschreibungen",
+                    "account_type": "Expense",
+                    "is_group": 1,
+                    "children": [
+                        {
+                            "id": "cf214c888424ce036704bd526650a4c1",
+                            "name": "4855 Sofortabschreibung GWG",
+                            "account_type": "Expense",
+                            "account_number": "4855"
+                        }
+                    ]
+                },
+                {
+                    "id": "8488954a5834d5484ed57439a0d43305",
+                    "name": "Kfz-Kosten",
+                    "account_type": "Expense",
+                    "is_group": 1,
+                    "children": [
+                        {
+                            "id": "4355e4bceaa024b71efb3223ac6576c0",
+                            "name": "4510 Kfz-Steuer",
+                            "account_type": "Expense",
+                            "account_number": "4510"
+                        },
+                        {
+                            "id": "4395e7b49fc7d34db620e6249836d747",
+                            "name": "4520 Kfz-Versicherungen",
+                            "account_type": "Expense",
+                            "account_number": "4520"
+                        },
+                        {
+                            "id": "9bcbd663916f135d81b8eff6dc8b8819",
+                            "name": "4530 laufende Kfz-Betriebskosten",
+                            "account_type": "Expense",
+                            "account_number": "4530"
+                        },
+                        {
+                            "id": "5359164e661dd33c4bdb98b5149b07d1",
+                            "name": "4540 Kfz-Reparaturen",
+                            "account_type": "Expense",
+                            "account_number": "4540"
+                        },
+                        {
+                            "id": "3b92417001893aa765edaa7109b2d48a",
+                            "name": "4570 Fremdfahrzeuge",
+                            "account_type": "Expense",
+                            "account_number": "4570"
+                        },
+                        {
+                            "id": "e4c3ff3a921558869191a648aeb9b0e3",
+                            "name": "4580 sonstige Kfz-Kosten",
+                            "account_type": "Expense",
+                            "account_number": "4580"
+                        }
+                    ]
+                },
+                {
+                    "id": "43953979cf408743814cb6887d5ec022",
+                    "name": "Personalkosten",
+                    "account_type": "Expense",
+                    "is_group": 1,
+                    "children": [
+                        {
+                            "id": "8f21199517fcfd70ad2ad6aaa3e714b6",
+                            "name": "4120 Geh\u00e4lter",
+                            "account_type": "Expense",
+                            "account_number": "4120"
+                        },
+                        {
+                            "id": "46ba645d075b6a1f3a38824d812f8818",
+                            "name": "4130 gesetzliche soziale Aufwendungen",
+                            "account_type": "Expense",
+                            "account_number": "4130"
+                        },
+                        {
+                            "id": "e89eafba1acc736a7ba74882a7f8c836",
+                            "name": "4165 Aufwendungen f\u00fcr Altersvorsorge",
+                            "account_type": "Expense",
+                            "account_number": "4165"
+                        },
+                        {
+                            "id": "88bc69e1ff8977cd70c52567dde8107d",
+                            "name": "4170 Verm\u00f6genswirksame Leistungen",
+                            "account_type": "Expense",
+                            "account_number": "4170"
+                        },
+                        {
+                            "id": "d74350b9ad5583b533fd906ec837d9fe",
+                            "name": "4190 Aushilfsl\u00f6hne",
+                            "account_type": "Expense",
+                            "account_number": "4190"
+                        }
+                    ]
+                },
+                {
+                    "id": "9adef6f318a931fbb8519a823e2c20e8",
+                    "name": "Raumkosten",
+                    "account_type": "Expense",
+                    "is_group": 1,
+                    "children": [
+                        {
+                            "id": "b6e84a2fcf1754f1f6f1f71913f03a1d",
+                            "name": "4210 Miete und Nebenkosten",
+                            "account_type": "Expense",
+                            "account_number": "4210"
+                        },
+                        {
+                            "id": "d41823e7c279286dd74c6ec757dcb305",
+                            "name": "4240 Gas, Wasser, Strom (Verwaltung, Vertrieb)",
+                            "account_type": "Expense",
+                            "account_number": "4240"
+                        },
+                        {
+                            "id": "db313359a146b610ce80a36dde18bf01",
+                            "name": "4250 Reinigung",
+                            "account_type": "Expense",
+                            "account_number": "4250"
+                        }
+                    ]
+                },
+                {
+                    "id": "accaec28a4afcf3c82570da4c9343c2d",
+                    "name": "Reparatur/Instandhaltung",
+                    "account_type": "Expense",
+                    "is_group": 1,
+                    "children": [
+                        {
+                            "id": "b5d6461bb3028d13faa8bee2981925a1",
+                            "name": "4805 Reparatur u. Instandh. von Anlagen/Maschinen u. Betriebs- u. Gesch\u00e4ftsausst.",
+                            "account_type": "Expense",
+                            "account_number": "4805"
+                        }
+                    ]
+                },
+                {
+                    "id": "709bf14d69164a6c2a48e6c0e13ece37",
+                    "name": "Versicherungsbeitr\u00e4ge",
+                    "account_type": "Expense",
+                    "is_group": 1,
+                    "children": [
+                        {
+                            "id": "7484251f3d5fc7ec71419b2fba733a78",
+                            "name": "4360 Versicherungen",
+                            "account_type": "Expense",
+                            "account_number": "4360"
+                        },
+                        {
+                            "id": "f2b1ad75fd3b7fc4473972a9c2675cbf",
+                            "name": "4380 Beitr\u00e4ge",
+                            "account_type": "Expense",
+                            "account_number": "4380"
+                        },
+                        {
+                            "id": "a2d552e480b95123e90be434b3ac9653",
+                            "name": "4390 sonstige Ausgaben",
+                            "account_type": "Expense",
+                            "account_number": "4390"
+                        },
+                        {
+                            "id": "0c73c5dc5e72bb4962b83ddc85991101",
+                            "name": "4396 steuerlich abzugsf\u00e4hige Versp\u00e4tungszuschl\u00e4ge und Zwangsgelder",
+                            "account_type": "Expense",
+                            "account_number": "4396"
+                        }
+                    ]
+                },
+                {
+                    "id": "a657ade965a1429d44d830d3832bf9aa",
+                    "name": "Werbe-/Reisekosten",
+                    "account_type": "Expense",
+                    "is_group": 1,
+                    "children": [
+                        {
+                            "id": "2d90f835fcb74d7a77b4a2a2b40c777a",
+                            "name": "4610 Werbekosten",
+                            "account_type": "Expense",
+                            "account_number": "4610"
+                        },
+                        {
+                            "id": "790770c5f93cff7d585bca1627446716",
+                            "name": "4653 Aufmerksamkeiten",
+                            "account_type": "Expense",
+                            "account_number": "4653"
+                        },
+                        {
+                            "id": "235a6225c2c7d2ffa865345e78cae283",
+                            "name": "4665 nicht abzugsf\u00e4hige Betriebsausg. aus Werbe-, Repr\u00e4s.- u. Reisekosten",
+                            "account_type": "Expense",
+                            "account_number": "4665"
+                        },
+                        {
+                            "id": "dda3ae53573975cd05fab1d3cdf40806",
+                            "name": "4670 Reisekosten Unternehmer",
+                            "account_type": "Expense",
+                            "account_number": "4670"
+                        }
+                    ]
+                },
+                {
+                    "id": "d0c00095e4b00f9f25253307be05e885",
+                    "name": "verschiedene Kosten",
+                    "account_type": "Expense",
+                    "is_group": 1,
+                    "children": [
+                        {
+                            "id": "b84666b6b2d17f4be4a2cc15e595b30d",
+                            "name": "4910 Porto",
+                            "account_type": "Expense",
+                            "account_number": "4910"
+                        },
+                        {
+                            "id": "892bb0974aa6c422f63b5df5354e8f7f",
+                            "name": "4920 Telekom",
+                            "account_type": "Expense",
+                            "account_number": "4920"
+                        },
+                        {
+                            "id": "20a13b07d90c5b385e78190525439aa2",
+                            "name": "4921 Mobilfunk D2",
+                            "account_type": "Expense",
+                            "account_number": "4921"
+                        },
+                        {
+                            "id": "4d57d9103ab150ad4f01bc7a918fd0cc",
+                            "name": "4922 Internet",
+                            "account_type": "Expense",
+                            "account_number": "4922"
+                        },
+                        {
+                            "id": "ac4d7c452835096c373f1a94dc3104f4",
+                            "name": "4930 B\u00fcrobedarf",
+                            "account_type": "Expense",
+                            "account_number": "4930"
+                        },
+                        {
+                            "id": "1bac306450e7bc0619e42c11ab791204",
+                            "name": "4940 Zeitschriften, B\u00fccher",
+                            "account_type": "Expense",
+                            "account_number": "4940"
+                        },
+                        {
+                            "id": "6be35acc206b144ee23c07086bc7a856",
+                            "name": "4945 Fortbildungskosten",
+                            "account_type": "Expense",
+                            "account_number": "4945"
+                        },
+                        {
+                            "id": "25afa584627e0c0e8681bd8a82a77d14",
+                            "name": "4955 Buchf\u00fchrungskosten",
+                            "account_type": "Expense",
+                            "account_number": "4955"
+                        },
+                        {
+                            "id": "bf093094a55c036a193357ebcafcab67",
+                            "name": "4957 Abschlu\u00df- u. Pr\u00fcfungskosten",
+                            "account_type": "Expense",
+                            "account_number": "4957"
+                        },
+                        {
+                            "id": "4f476c9b65684d56630db45690b9d4fc",
+                            "name": "4970 Nebenkosten des Geldverkehrs",
+                            "account_type": "Expense",
+                            "account_number": "4970"
+                        },
+                        {
+                            "id": "a5b36148c3fc06080973a5d25f28225b",
+                            "name": "4985 Werkzeuge und Kleinger\u00e4te",
+                            "account_type": "Expense",
+                            "account_number": "4985"
+                        }
+                    ]
+                },
+                {
+                    "id": "8d2641f8bbc41aa863274bb496002f3e",
+                    "name": "Zinsaufwendungen",
+                    "account_type": "Expense",
+                    "is_group": 1,
+                    "children": [
+                        {
+                            "id": "2d20e36f8abb4e366c8e3e2783bdafab",
+                            "name": "2110 Zinsaufwendungen f\u00fcr kurzfristige Verbindlichkeiten",
+                            "account_type": "Expense",
+                            "account_number": "2110"
+                        },
+                        {
+                            "id": "17651501792b93b06832634462ddddae",
+                            "name": "2121 Zinsaufwendungen f\u00fcr KFZ Finanzierung",
+                            "account_type": "Expense",
+                            "account_number": "2121"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "2d4eb2e0ef3bab0ac50b87c84babcf5d",
+            "name": "Anfangsbestand 9",
+            "account_type": "Equity",
+            "is_group": 1,
+            "description": "Saldenvortragskonten",
+            "children": [
+                {
+                    "id": "26c3f10c1c7621661c1b813d6141280d",
+                    "name": "Saldenvortragskonten",
+                    "account_type": "Equity",
+                    "is_group": 1,
+                    "children": [
+                        {
+                            "id": "fa346eee1add66248bff420aafeebebb",
+                            "name": "9000 Saldenvortrag Sachkonten",
+                            "account_type": "Equity",
+                            "account_number": "9000"
+                        },
+                        {
+                            "id": "1f36ecbf065faa2b25a0749ceee72efa",
+                            "name": "9008 Saldenvortr\u00e4ge Debitoren",
+                            "account_type": "Equity",
+                            "account_number": "9008"
+                        },
+                        {
+                            "id": "a6c754f12d0b9129790d9f52c5361778",
+                            "name": "9009 Saldenvortr\u00e4ge Kreditoren",
+                            "account_type": "Equity",
+                            "account_number": "9009"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "1888a7d2fbbdede8446090a31651565f",
+            "name": "Privatkonten 1",
+            "account_type": "Equity",
+            "is_group": 1,
+            "children": [
+                {
+                    "id": "b9ae1b059749ea81c757a9adad39db1b",
+                    "name": "Privatentnahmen/-einlagen",
+                    "account_type": "Equity",
+                    "is_group": 1,
+                    "children": [
+                        {
+                            "id": "0e6b8f9c973149c8d1c00e40919e9e21",
+                            "name": "1800 Privatentnahme allgemein",
+                            "account_type": "Equity",
+                            "account_number": "1800"
+                        },
+                        {
+                            "id": "fff2b92b43dc9d9690a7e5c365d2baf6",
+                            "name": "1810 Privatsteuern",
+                            "account_type": "Equity",
+                            "account_number": "1810"
+                        },
+                        {
+                            "id": "5c008564ba99d0dfe6f20166adde5e6c",
+                            "name": "1820 Sonderausgaben beschr\u00e4nkt abzugsf\u00e4hig",
+                            "account_type": "Equity",
+                            "account_number": "1820"
+                        },
+                        {
+                            "id": "d89a53718b4753ac5407b38ab43f1339",
+                            "name": "1830 Sonderausgaben unbeschr\u00e4nkt abzugsf\u00e4hig",
+                            "account_type": "Equity",
+                            "account_number": "1830"
+                        },
+                        {
+                            "id": "ab2c3c1b68e9c21ca3bce32c729c5cdc",
+                            "name": "1850 Au\u00dfergew\u00f6hnliche Belastungen",
+                            "account_type": "Equity",
+                            "account_number": "1850"
+                        },
+                        {
+                            "id": "4057a69542c170211849f7705354aadb",
+                            "name": "1890 Privateinlagen",
+                            "account_type": "Equity",
+                            "account_number": "1890"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

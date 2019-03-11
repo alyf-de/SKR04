@@ -1,10 +1,32 @@
 
 ### Flatten CoA
 
-`gnucash_skr*.json` to `gnucash_flat_skr*.json`:
+https://jqplay.org/
+
+* Filter:
 
 ```jq
-."gnc-account-example".account | map( {"country_code": "", "name": "Kontenrahmen", "description": "", (.id.__text): {"is_group": (if .code == null then 1 else 0 end  ), "account_number": .code.__text, "name": .name.__text, "account_type": .type.__text, "description": .description.__text, "parent": .parent.__text} } ) |  add
+  ."gnc-account-example".account | map( {"country_code": "", "name": "Kontenrahmen", "description": "", (.id.__text): {"is_group": (if .code == null then 1 else 0 end  ), "account_number": .code.__text, "name": .name.__text, "account_type": .type.__text, "description": .description.__text, "parent": .parent.__text} } ) |  add
+```
+
+* JSON: `gnucash_skr*.json`
+* Result: `gnucash_skr*_flat.json`
+
+---
+
+* Filter:
+
+```jq
+  ."gnc-account-example".account | map( [ {"id": .id.__text, "is_group": (if .code == null then 1 else 0 end  ), "account_number": .code.__text, "name": .name.__text, "account_type": .type.__text, "description": .description.__text, "parent": .parent.__text} ] ) |  add
+```
+
+* JSON: `gnucash_skr*.json`
+* Result: `gnucash_skr*_array.json`
+
+### Nesting
+
+```bash
+python main.py
 ```
 
 ### Source
