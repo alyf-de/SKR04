@@ -36,7 +36,7 @@ def walk(acc, skr):
     """ Recursively walk tree and add children """
     children = get_children(acc['id'], skr)
     if children:
-        acc['children'] = children
+        acc['children'] = sorted(children, key=lambda k: k['name']) 
         for child in acc['children']:
             walk(child, skr)
     return acc

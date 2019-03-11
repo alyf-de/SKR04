@@ -24,24 +24,6 @@
                             "account_number": "0027"
                         },
                         {
-                            "id": "a588283077bd935dede66d13b2ee478f",
-                            "name": "0410 Gesch\u00e4ftsausstattung",
-                            "account_type": "Asset",
-                            "account_number": "0410"
-                        },
-                        {
-                            "id": "573063d23b81fe3f9917d80fe6cc41e7",
-                            "name": "0420 B\u00fcroeinrichtung",
-                            "account_type": "Asset",
-                            "account_number": "0420"
-                        },
-                        {
-                            "id": "bd74fcb2d15fc7540ecc5ba8f27cbf48",
-                            "name": "0565 Darlehen",
-                            "account_type": "Asset",
-                            "account_number": "0565"
-                        },
-                        {
                             "id": "904b262e6f84659046267cad87ac5e90",
                             "name": "0210 Maschinen",
                             "account_type": "Asset",
@@ -54,10 +36,28 @@
                             "account_number": "0400"
                         },
                         {
+                            "id": "a588283077bd935dede66d13b2ee478f",
+                            "name": "0410 Gesch\u00e4ftsausstattung",
+                            "account_type": "Asset",
+                            "account_number": "0410"
+                        },
+                        {
+                            "id": "573063d23b81fe3f9917d80fe6cc41e7",
+                            "name": "0420 B\u00fcroeinrichtung",
+                            "account_type": "Asset",
+                            "account_number": "0420"
+                        },
+                        {
                             "id": "2876b41c069107076e7a18ec39bf4f9c",
                             "name": "0430 Ladeneinrichtung",
                             "account_type": "Asset",
                             "account_number": "0430"
+                        },
+                        {
+                            "id": "bd74fcb2d15fc7540ecc5ba8f27cbf48",
+                            "name": "0565 Darlehen",
+                            "account_type": "Asset",
+                            "account_number": "0565"
                         }
                     ]
                 },
@@ -80,16 +80,16 @@
                             "account_number": "1200"
                         },
                         {
-                            "id": "f048cb49a135a298d5df958a4c63ba22",
-                            "name": "1590 Durchlaufende Posten",
-                            "account_type": "Asset",
-                            "account_number": "1590"
-                        },
-                        {
                             "id": "58c8b84a785d7feac255d381943076df",
                             "name": "1371 Gewinnermittlung \u00a74/3 nicht Ergebniswirksam",
                             "account_type": "Asset",
                             "account_number": "1371"
+                        },
+                        {
+                            "id": "2fe36b4ddde053387e42aa893a94b91b",
+                            "name": "1400 Ford. a. Lieferungen und Leistungen",
+                            "account_type": "Receivable",
+                            "account_number": "1400"
                         },
                         {
                             "id": "7edc3c319713c53035b3e439ccec5e2b",
@@ -110,10 +110,10 @@
                             "account_number": "1577"
                         },
                         {
-                            "id": "2fe36b4ddde053387e42aa893a94b91b",
-                            "name": "1400 Ford. a. Lieferungen und Leistungen",
-                            "account_type": "Receivable",
-                            "account_number": "1400"
+                            "id": "f048cb49a135a298d5df958a4c63ba22",
+                            "name": "1590 Durchlaufende Posten",
+                            "account_type": "Asset",
+                            "account_number": "1590"
                         }
                     ]
                 },
@@ -140,127 +140,35 @@
             ]
         },
         {
-            "id": "845b29bc14787bded30488e8d51eec0b",
-            "name": "Passiva",
-            "account_type": "Liability",
+            "id": "2d4eb2e0ef3bab0ac50b87c84babcf5d",
+            "name": "Anfangsbestand 9",
+            "account_type": "Equity",
             "is_group": 1,
-            "description": "Passiva",
+            "description": "Saldenvortragskonten",
             "children": [
                 {
-                    "id": "dea7f32e6a447d2d1cd7048932c98265",
-                    "name": "Umsatzsteuer",
-                    "account_type": "Liability",
+                    "id": "26c3f10c1c7621661c1b813d6141280d",
+                    "name": "Saldenvortragskonten",
+                    "account_type": "Equity",
                     "is_group": 1,
                     "children": [
                         {
-                            "id": "d699c440f7817339d2fe60dd875520b6",
-                            "name": "1771 Umsatzsteuer 7%",
-                            "account_type": "Liability",
-                            "account_number": "1771"
+                            "id": "fa346eee1add66248bff420aafeebebb",
+                            "name": "9000 Saldenvortrag Sachkonten",
+                            "account_type": "Equity",
+                            "account_number": "9000"
                         },
                         {
-                            "id": "55a2876edef147ed7631486de4af558c",
-                            "name": "1776 Umsatzsteuer 19%",
-                            "account_type": "Liability",
-                            "account_number": "1776"
+                            "id": "1f36ecbf065faa2b25a0749ceee72efa",
+                            "name": "9008 Saldenvortr\u00e4ge Debitoren",
+                            "account_type": "Equity",
+                            "account_number": "9008"
                         },
                         {
-                            "id": "4b5e1c2b17024a7721d0955c9f140dd6",
-                            "name": "1780 Umsatzsteuer-Vorauszahlung",
-                            "account_type": "Liability",
-                            "account_number": "1780"
-                        },
-                        {
-                            "id": "08793cd11dfca23d7b435a7338db02da",
-                            "name": "1781 Umsatzsteuer-Vorauszahlung 1/11",
-                            "account_type": "Liability",
-                            "account_number": "1781"
-                        },
-                        {
-                            "id": "8e1583dfe60365b756f5365741250001",
-                            "name": "1787 Umsatzsteuer \u00a7 13b UStG 19%",
-                            "account_type": "Liability",
-                            "account_number": "1787"
-                        },
-                        {
-                            "id": "635fe36261db8b9beda522420f564028",
-                            "name": "1790 Umsatzsteuer Vorjahr",
-                            "account_type": "Liability",
-                            "account_number": "1790"
-                        },
-                        {
-                            "id": "b2d79b416fee27d4d6a38643f6ad0d45",
-                            "name": "1791 Umsatzsteuer fr\u00fchere Jahre",
-                            "account_type": "Liability",
-                            "account_number": "1791"
-                        }
-                    ]
-                },
-                {
-                    "id": "a31fca8b7c5eb2cb0111f1f97696ac93",
-                    "name": "Verbindlichkeiten",
-                    "account_type": "Liability",
-                    "is_group": 1,
-                    "children": [
-                        {
-                            "id": "1bf9f2675a36b278adcf6da68a7e4cbe",
-                            "name": "1600 Verblk. aus Lieferungen u. Leistungen",
-                            "account_type": "Payable",
-                            "account_number": "1600"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "3f31fc649f19b5201f22f7648c3f7107",
-            "name": "Erl\u00f6se u. Ertr\u00e4ge 2/8",
-            "account_type": "Income",
-            "is_group": 1,
-            "children": [
-                {
-                    "id": "fd04e181ab83b37b80a4609b0806e954",
-                    "name": "Erl\u00f6skonten 8",
-                    "account_type": "Income",
-                    "is_group": 1,
-                    "children": [
-                        {
-                            "id": "d75d796e879b0ad9b2732d698ae9e838",
-                            "name": "8400 Erl\u00f6se USt. 19%",
-                            "account_type": "Income",
-                            "account_number": "8400"
-                        },
-                        {
-                            "id": "0c82316c2aecaa02ce1b4ecb223f6f5d",
-                            "name": "8300 Erl\u00f6se USt. 7%",
-                            "account_type": "Income",
-                            "account_number": "8300"
-                        }
-                    ]
-                },
-                {
-                    "id": "4f552b822559c82eaa816d0049f70064",
-                    "name": "Ertragskonten 2",
-                    "account_type": "Income",
-                    "is_group": 1,
-                    "children": [
-                        {
-                            "id": "cc08ab7c747853f5f7ea6b384fdd8b4d",
-                            "name": "2650 sonstige Zinsen und \u00e4hnliche Ertr\u00e4ge",
-                            "account_type": "Income",
-                            "account_number": "2650"
-                        },
-                        {
-                            "id": "5634359999c43ba58697553d1d905c4c",
-                            "name": "2500 Au\u00dferordentliche Ertr\u00e4ge",
-                            "account_type": "Income",
-                            "account_number": "2500"
-                        },
-                        {
-                            "id": "067716095fef7e694a2e0c40f1eaaefd",
-                            "name": "2700 Sonstige Ertr\u00e4ge",
-                            "account_type": "Income",
-                            "account_number": "2700"
+                            "id": "a6c754f12d0b9129790d9f52c5361778",
+                            "name": "9009 Saldenvortr\u00e4ge Kreditoren",
+                            "account_type": "Equity",
+                            "account_number": "9009"
                         }
                     ]
                 }
@@ -473,6 +381,26 @@
                     ]
                 },
                 {
+                    "id": "8d2641f8bbc41aa863274bb496002f3e",
+                    "name": "Zinsaufwendungen",
+                    "account_type": "Expense",
+                    "is_group": 1,
+                    "children": [
+                        {
+                            "id": "2d20e36f8abb4e366c8e3e2783bdafab",
+                            "name": "2110 Zinsaufwendungen f\u00fcr kurzfristige Verbindlichkeiten",
+                            "account_type": "Expense",
+                            "account_number": "2110"
+                        },
+                        {
+                            "id": "17651501792b93b06832634462ddddae",
+                            "name": "2121 Zinsaufwendungen f\u00fcr KFZ Finanzierung",
+                            "account_type": "Expense",
+                            "account_number": "2121"
+                        }
+                    ]
+                },
+                {
                     "id": "d0c00095e4b00f9f25253307be05e885",
                     "name": "verschiedene Kosten",
                     "account_type": "Expense",
@@ -545,59 +473,131 @@
                             "account_number": "4985"
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "3f31fc649f19b5201f22f7648c3f7107",
+            "name": "Erl\u00f6se u. Ertr\u00e4ge 2/8",
+            "account_type": "Income",
+            "is_group": 1,
+            "children": [
                 {
-                    "id": "8d2641f8bbc41aa863274bb496002f3e",
-                    "name": "Zinsaufwendungen",
-                    "account_type": "Expense",
+                    "id": "fd04e181ab83b37b80a4609b0806e954",
+                    "name": "Erl\u00f6skonten 8",
+                    "account_type": "Income",
                     "is_group": 1,
                     "children": [
                         {
-                            "id": "2d20e36f8abb4e366c8e3e2783bdafab",
-                            "name": "2110 Zinsaufwendungen f\u00fcr kurzfristige Verbindlichkeiten",
-                            "account_type": "Expense",
-                            "account_number": "2110"
+                            "id": "0c82316c2aecaa02ce1b4ecb223f6f5d",
+                            "name": "8300 Erl\u00f6se USt. 7%",
+                            "account_type": "Income",
+                            "account_number": "8300"
                         },
                         {
-                            "id": "17651501792b93b06832634462ddddae",
-                            "name": "2121 Zinsaufwendungen f\u00fcr KFZ Finanzierung",
-                            "account_type": "Expense",
-                            "account_number": "2121"
+                            "id": "d75d796e879b0ad9b2732d698ae9e838",
+                            "name": "8400 Erl\u00f6se USt. 19%",
+                            "account_type": "Income",
+                            "account_number": "8400"
+                        }
+                    ]
+                },
+                {
+                    "id": "4f552b822559c82eaa816d0049f70064",
+                    "name": "Ertragskonten 2",
+                    "account_type": "Income",
+                    "is_group": 1,
+                    "children": [
+                        {
+                            "id": "5634359999c43ba58697553d1d905c4c",
+                            "name": "2500 Au\u00dferordentliche Ertr\u00e4ge",
+                            "account_type": "Income",
+                            "account_number": "2500"
+                        },
+                        {
+                            "id": "cc08ab7c747853f5f7ea6b384fdd8b4d",
+                            "name": "2650 sonstige Zinsen und \u00e4hnliche Ertr\u00e4ge",
+                            "account_type": "Income",
+                            "account_number": "2650"
+                        },
+                        {
+                            "id": "067716095fef7e694a2e0c40f1eaaefd",
+                            "name": "2700 Sonstige Ertr\u00e4ge",
+                            "account_type": "Income",
+                            "account_number": "2700"
                         }
                     ]
                 }
             ]
         },
         {
-            "id": "2d4eb2e0ef3bab0ac50b87c84babcf5d",
-            "name": "Anfangsbestand 9",
-            "account_type": "Equity",
+            "id": "845b29bc14787bded30488e8d51eec0b",
+            "name": "Passiva",
+            "account_type": "Liability",
             "is_group": 1,
-            "description": "Saldenvortragskonten",
+            "description": "Passiva",
             "children": [
                 {
-                    "id": "26c3f10c1c7621661c1b813d6141280d",
-                    "name": "Saldenvortragskonten",
-                    "account_type": "Equity",
+                    "id": "dea7f32e6a447d2d1cd7048932c98265",
+                    "name": "Umsatzsteuer",
+                    "account_type": "Liability",
                     "is_group": 1,
                     "children": [
                         {
-                            "id": "fa346eee1add66248bff420aafeebebb",
-                            "name": "9000 Saldenvortrag Sachkonten",
-                            "account_type": "Equity",
-                            "account_number": "9000"
+                            "id": "d699c440f7817339d2fe60dd875520b6",
+                            "name": "1771 Umsatzsteuer 7%",
+                            "account_type": "Liability",
+                            "account_number": "1771"
                         },
                         {
-                            "id": "1f36ecbf065faa2b25a0749ceee72efa",
-                            "name": "9008 Saldenvortr\u00e4ge Debitoren",
-                            "account_type": "Equity",
-                            "account_number": "9008"
+                            "id": "55a2876edef147ed7631486de4af558c",
+                            "name": "1776 Umsatzsteuer 19%",
+                            "account_type": "Liability",
+                            "account_number": "1776"
                         },
                         {
-                            "id": "a6c754f12d0b9129790d9f52c5361778",
-                            "name": "9009 Saldenvortr\u00e4ge Kreditoren",
-                            "account_type": "Equity",
-                            "account_number": "9009"
+                            "id": "4b5e1c2b17024a7721d0955c9f140dd6",
+                            "name": "1780 Umsatzsteuer-Vorauszahlung",
+                            "account_type": "Liability",
+                            "account_number": "1780"
+                        },
+                        {
+                            "id": "08793cd11dfca23d7b435a7338db02da",
+                            "name": "1781 Umsatzsteuer-Vorauszahlung 1/11",
+                            "account_type": "Liability",
+                            "account_number": "1781"
+                        },
+                        {
+                            "id": "8e1583dfe60365b756f5365741250001",
+                            "name": "1787 Umsatzsteuer \u00a7 13b UStG 19%",
+                            "account_type": "Liability",
+                            "account_number": "1787"
+                        },
+                        {
+                            "id": "635fe36261db8b9beda522420f564028",
+                            "name": "1790 Umsatzsteuer Vorjahr",
+                            "account_type": "Liability",
+                            "account_number": "1790"
+                        },
+                        {
+                            "id": "b2d79b416fee27d4d6a38643f6ad0d45",
+                            "name": "1791 Umsatzsteuer fr\u00fchere Jahre",
+                            "account_type": "Liability",
+                            "account_number": "1791"
+                        }
+                    ]
+                },
+                {
+                    "id": "a31fca8b7c5eb2cb0111f1f97696ac93",
+                    "name": "Verbindlichkeiten",
+                    "account_type": "Liability",
+                    "is_group": 1,
+                    "children": [
+                        {
+                            "id": "1bf9f2675a36b278adcf6da68a7e4cbe",
+                            "name": "1600 Verblk. aus Lieferungen u. Leistungen",
+                            "account_type": "Payable",
+                            "account_number": "1600"
                         }
                     ]
                 }
