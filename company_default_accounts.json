@@ -1,0 +1,98 @@
+[
+    {
+        "fieldname": "default_bank_account",
+        "account_number": "1800"
+    },
+    {
+        "fieldname": "default_cash_account",
+        "account_number": "1600"
+    },
+    {
+        "fieldname": "default_receivable_account",
+        "account_number": "1200"
+    },
+    {
+        "fieldname": "round_off_account",
+        "account_number": ""
+    },
+    {
+        "fieldname": "write_off_account",
+        "account_number": "6910"
+    },
+    {
+        "fieldname": "discount_allowed_account",
+        "account_number": "4770"
+    },
+    {
+        "fieldname": "discount_received_account",
+        "account_number": "5770"
+    },
+    {
+        "fieldname": "exchange_gain_loss_account",
+        "account_number": "4840"
+    },
+    {
+        "fieldname": "default_payable_account",
+        "account_number": "3300"
+    },
+    {
+        "fieldname": "default_employee_advance_account",
+        "account_number": "1340"
+    },
+    {
+        "fieldname": "default_expense_account",
+        "account_number": "6990"
+    },
+    {
+        "fieldname": "default_income_account",
+        "account_number": "4200"
+    },
+    {
+        "fieldname": "default_deferred_revenue_account",
+        "account_number": "3900"
+    },
+    {
+        "fieldname": "default_deferred_expense_account",
+        "account_number": "2978"
+    },
+    {
+        "fieldname": "default_inventory_account",
+        "account_number": "1100"
+    },
+    {
+        "fieldname": "stock_adjustment_account",
+        "account_number": "6990"
+    },
+    {
+        "fieldname": "stock_received_but_not_billed",
+        "account_number": "3300"
+    },
+    {
+        "fieldname": "expenses_included_in_valuation",
+        "account_number": "6992"
+    },
+    {
+        "fieldname": "accumulated_depreciation_account",
+        "account_number": ""
+    },
+    {
+        "fieldname": "depreciation_expense_account",
+        "account_number": ""
+    },
+    {
+        "fieldname": "expenses_included_in_asset_valuation",
+        "account_number": ""
+    },
+    {
+        "fieldname": "disposal_account",
+        "account_number": "4849"
+    },
+    {
+        "fieldname": "capital_work_in_progress_account",
+        "account_number": "0700"
+    },
+    {
+        "fieldname": "asset_received_but_not_billed",
+        "account_number": "3300"
+    }
+]
