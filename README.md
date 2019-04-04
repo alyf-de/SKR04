@@ -1,6 +1,6 @@
 > In Entwicklung. Einsatz in Produktivsystemen derzeit noch nicht empfohlen.
 
-Standardkontenrahmen 04 for ERPNext.
+Standardkontenrahmen (SKR) 04 für ERPNext.
 
 Sponsored by [//SEIBERT/MEDIA](https://www.seibert-media.net/) and [tüit](https://www.tueit.de/).
 
@@ -11,7 +11,20 @@ Sponsored by [//SEIBERT/MEDIA](https://www.seibert-media.net/) and [tüit](https
 ![Struktur des Kontenrahmens](oberkonten.png)
 
 
-ERPNext bucht nach dem Umsatzkostenverfahren.
+ERPNext bucht nach dem Umsatzkostenverfahren:
+
+|   |                               |
+|---|-------------------------------|        
+|   | Umsatzerlöse 
+| – | Herstellungskosten
+| = | **Bruttoergebnis vom Umsatz**
+| – | Vertriebskosten
+| – | allg. Verwaltungskosten
+| + | sonst. betriebliche Erträge
+| – | sonst. betriebliche Aufwendungen
+| = | **operatives Ergebnis**
+ 
+
 
 Der Kontotyp bewirkt, dass an den entsprechender Stelle in ERPNext nur Konten dieses Typs angeboten werden. Außerdem werden die Standardkonten beim Erstellen eines neuen Unternehmens anhand der Kontentypen gesetzt.
 
@@ -23,8 +36,8 @@ ssh my.erp.com
 cd frappe-bench/ && bench clear-cache
 ```
 
-* [More on SCP](https://unix.stackexchange.com/a/106482)
-* [More on Bench](https://frappe.io/docs/user/en/bench/resources/bench-commands-cheatsheet)
+* [Mehr zu SCP](https://unix.stackexchange.com/a/106482)
+* [Mehr zu Bench](https://frappe.io/docs/user/en/bench/resources/bench-commands-cheatsheet)
 
 ### Notizen
 
@@ -34,62 +47,12 @@ cd frappe-bench/ && bench clear-cache
 
 * Die führenden Nummern der Wurzel- und Gruppenkonten stammen aus dem Handelsgesetzbuch. Sie sind nur für den Jahresabschluss relevant.
 
-#### CSV zu JSON
+* Inventurdifferenzen bei den Roh-, Hilfs- und Betriebsstoffen werden zu Lasten des Kontos *Herstellungskosten der zur Erzielung der Umsatzerlöse erbrachten Leistungen* gebucht.
 
-```csv
-1800, Kasse, Cash
-1810, Nebenkasse 1
-1811, Sparschwein
-1820, Nebenkasse 2
-```
 
-Sollte zu
+### Lizenz
 
-```json
-{
-  "Kasse (Gruppe)" : {
-    "is_group" : 1,
-    "Kasse" : {
-      "account_number" : 1800,
-      "account_type" : "Cash"
-    },
-  "Nebenkasse 1 (Gruppe)" : {
-    "is_group": 1,
-    "Nebenkasse 1" : {
-      "account_number": 1810,
-      "account_type": "Cash"
-    },
-    "Sparschwein" : {
-      "account_number": 1811,
-      "account_type": "Cash"
-    },
-  },
-  "Nebenkasse 2" : {
-    "account_number": 1200,
-    "account_type": "Cash"
-  }
-}
-```
-
-werden.
-
-#### Remove Number from Groups
-
-Replace
-
-```regex
-"is_group": 1,\n {0,}"account_number": ".{4}"
-```
-
-with
-
-```
-"is_group": 1
-```
-
-### License
-
-Copyright (C) 2019 Raffael Meyer raffael@alyf.de
+Copyright (C) 2019 Raffael Meyer <raffael@alyf.de>
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
