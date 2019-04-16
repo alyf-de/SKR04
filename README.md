@@ -39,6 +39,20 @@ cd frappe-bench/ && bench clear-cache
 * [Mehr zu SCP](https://unix.stackexchange.com/a/106482)
 * [Mehr zu Bench](https://frappe.io/docs/user/en/bench/resources/bench-commands-cheatsheet)
 
+
+### DATEV Report
+
+1. New Report
+
+    Ref DocType: GL Entry
+    Report Type: Query Report
+    Query: SQL aus `datev_report.sql`
+    
+2. Show Report
+
+
+* Die von ERPNext generierte CSV-Datei wird sich auch in DATEV Unternehmen Online importieren lassen. Siehe dazu folgende Anleitung:  https://www.datev.de/dnlexom/client/app/index.html#/document/1070909
+
 ### Notizen
 
 * Die Konten für Löhne und Gehälter sind unter Herstelllungskosten angesiedelt. Für eine korrekte GuV-Rechnung muss der Personalaufwand für allgemeine Verwaltungskosten und Vertriebskosten umgebucht werden.
@@ -49,6 +63,9 @@ cd frappe-bench/ && bench clear-cache
 
 * Inventurdifferenzen bei den Roh-, Hilfs- und Betriebsstoffen werden zu Lasten des Kontos *Herstellungskosten der zur Erzielung der Umsatzerlöse erbrachten Leistungen* gebucht.
 
+### Weiterführende Links
+
+* [CSV-Datensatzbeschreibung](https://www.datev.de/dnlexom/v2/content/files/st1284022283.pdf) von DATEV
 
 ### Lizenz
 
